@@ -3,5 +3,3 @@ env/
 data/
 .git
 .vscode
-*.DS_Store
-*.so
