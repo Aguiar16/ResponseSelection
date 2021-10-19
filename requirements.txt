@@ -3,9 +3,6 @@ cffi==1.14.0
 chardet==3.0.4
 googletrans==2.4.0
 idna==2.8
-mkl-fft==1.0.15
-mkl-random==1.1.0
-mkl-service==2.3.0
 numpy==1.18.1
 Pillow==7.1.2
 pycparser==2.20
