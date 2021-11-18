@@ -13,5 +13,15 @@ task_list = [
         "description": (
             "Our implementation is of DSTC7 subtask1 ubuntu under this task~"
         ),
-    }
+    },
+    {
+        "id": "Ubuntu",
+        "display_name": "Ubuntu",
+        "task": "ubuntu",
+        "tags": ["ChitChat", "All"],
+        "description": (
+            "Dialogs between an Ubuntu user and an expert trying to fix issue, "
+            "we use the V2 version, which cleaned the data to some extent. "
+        ),
+    },
 ]
