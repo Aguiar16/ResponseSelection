@@ -149,8 +149,6 @@ class ParDSTC7Teacher(FixedDialogTeacher):
     def num_examples(self):
         return len(self.data)
 
-
-
     def get(self, episode_idx, entry_idx=0):
         rand = random.Random(episode_idx)
         episode = self.data[episode_idx]

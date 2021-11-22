@@ -15,9 +15,9 @@ task_list = [
         ),
     },
     {
-        "id": "Ubuntu",
-        "display_name": "Ubuntu",
-        "task": "ubuntu",
+        "id": "par_ubuntuv2",
+        "display_name": "par_ubuntuv2",
+        "task": "par_ubuntuv2",
         "tags": ["ChitChat", "All"],
         "description": (
             "Dialogs between an Ubuntu user and an expert trying to fix issue, "
