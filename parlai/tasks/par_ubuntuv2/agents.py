@@ -4,7 +4,7 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-from parlai.core.teachers import DialogTeacher, FixedDialogTeacher
+from parlai.core.teachers import FixedDialogTeacher
 from .build import build
 
 import random
@@ -80,7 +80,7 @@ def get_partioned_text(texts, partitions, segment_type='basic',segment_num=5):
 
     return text, partition_mask
 
-class ParUbuntuTeacher(DialogTeacher):
+class ParUbuntuTeacher(FixedDialogTeacher):
     """
     This teacher inherits from the core Dialog Teacher, which just requires it to define
     an iterator over its data `setup_data` in order to inherit basic metrics, a default
@@ -102,6 +102,7 @@ class ParUbuntuTeacher(DialogTeacher):
         basedir = os.path.join(opt['datapath'], 'par_ubuntuv2')
         filepath = os.path.join(
             basedir, "with_partitions_ubuntuV2.%s.withdiscourse.txt" % (self.split)
+            
         )
 
         with open(filepath, 'r') as f:
