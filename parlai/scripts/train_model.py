@@ -764,6 +764,9 @@ class TrainLoop:
                                 "supported for distributed mode"
                             )
                         break
+                    except:
+                        self.save_model('.checkpoint')
+                        break
                     self.last_valid_epoch = self._total_epochs
                     if stop_training:
                         break
